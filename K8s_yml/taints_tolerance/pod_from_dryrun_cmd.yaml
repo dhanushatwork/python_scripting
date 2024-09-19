@@ -1,0 +1,39 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cni.projectcalico.org/containerID: d551fa8eb6118a988b74891fbc42bcd06c078485fdbcb5efeaf06af1bad7a3a0
+    cni.projectcalico.org/podIP: 192.168.0.4/32
+    cni.projectcalico.org/podIPs: 192.168.0.4/32
+  creationTimestamp: "2024-08-31T06:18:52Z"
+  labels:
+    app: india
+  name: india-pod
+  namespace: default
+  resourceVersion: "3189"
+  uid: 6a95db41-2663-4aaa-b2d5-776eafa8ea57
+spec:
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoSchedule"
+  containers:
+  - image: nginx
+    imagePullPolicy: Always
+    name: my-container
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-cr9dd
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: controlplane
+  preemptionPolicy: PreemptLowerPriority
