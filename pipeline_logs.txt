@@ -1,0 +1,6 @@
+[INFO] Stage 1: STARTED
+[INFO] Stage 1: SUCCESS
+[INFO] Stage 2: STARTED
+[INFO] Stage 2: FAILED
+[INFO] Stage 3: STARTED
+[INFO] Stage 3: SUCCESS

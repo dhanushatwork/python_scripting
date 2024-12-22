@@ -1,0 +1,5 @@
+INFO: Service started  
+WARNING: High memory usage  
+ERROR: Failed to connect to database  
+INFO: Service running  
+ERROR: Disk space low  
