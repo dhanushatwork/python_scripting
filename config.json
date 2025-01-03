@@ -1,0 +1,9 @@
+{
+    "name": "Dummy",
+    "version": 1.0,
+    "features": [
+        "app",
+        "service",
+        "domain"
+    ]
+}
